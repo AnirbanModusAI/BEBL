@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - B.E. Billimoria & Co. Ltd.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li class="dropdown">
+                        <span class="dropbtn">About</span>
+                        <div class="dropdown-content">
+                            <a href="about-profile.html">Profile</a>
+                            <a href="about-management.html">Management</a>
+                            <a href="about-registrations.html">Registrations</a>
+                            <a href="about-policies.html">Policies</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Categories -->
+        <section class="project-categories">
+            <div class="container">
+                <div class="category-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-category="all">All Projects</button>
+                    <button class="filter-btn" data-category="heavy-engineering">Heavy Engineering</button>
+                    <button class="filter-btn" data-category="special-projects">Special Projects</button>
+                    <button class="filter-btn" data-category="utility">Utility</button>
+                    <button class="filter-btn" data-category="commercial">Commercial</button>
+                    <button class="filter-btn" data-category="residential">Residential</button>
+                </div>
+
+                <div class="projects-stats" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-projects">100+</span>
+                        <span class="stat-label">Total Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="completed-projects">85</span>
+                        <span class="stat-label">Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="ongoing-projects">15</span>
+                        <span class="stat-label">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Heavy Engineering Projects -->
+                    <div class="project-card" data-category="heavy-engineering" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Heavy Engineering</span>
+                                <span class="project-status completed">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 1</h3>
+                            <p>Advanced infrastructure development with cutting-edge engineering solutions</p>
+                            <div class="project-meta">
+                                <span class="location">Mumbai, Maharashtra</span>
+                                <span class="year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="heavy-engineering" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Heavy Engineering</span>
+                                <span class="project-status ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 2</h3>
+                            <p>Large-scale industrial complex with state-of-the-art facilities</p>
+                            <div class="project-meta">
+                                <span class="location">Pune, Maharashtra</span>
+                                <span class="year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Special Projects -->
+                    <div class="project-card" data-category="special-projects" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Special Projects</span>
+                                <span class="project-status completed">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 3</h3>
+                            <p>Unique architectural marvel with innovative design concepts</p>
+                            <div class="project-meta">
+                                <span class="location">Delhi, NCR</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="special-projects" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Special Projects</span>
+                                <span class="project-status ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 4</h3>
+                            <p>Iconic landmark project showcasing engineering excellence</p>
+                            <div class="project-meta">
+                                <span class="location">Bangalore, Karnataka</span>
+                                <span class="year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Utility Projects -->
+                    <div class="project-card" data-category="utility" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Utility</span>
+                                <span class="project-status completed">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 5</h3>
+                            <p>Essential infrastructure development for urban growth</p>
+                            <div class="project-meta">
+                                <span class="location">Chennai, Tamil Nadu</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="utility" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Utility</span>
+                                <span class="project-status ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 6</h3>
+                            <p>Public utility infrastructure with sustainable solutions</p>
+                            <div class="project-meta">
+                                <span class="location">Hyderabad, Telangana</span>
+                                <span class="year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Commercial Projects -->
+                    <div class="project-card" data-category="commercial" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Commercial</span>
+                                <span class="project-status completed">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 7</h3>
+                            <p>Premium commercial complex with world-class amenities</p>
+                            <div class="project-meta">
+                                <span class="location">Mumbai, Maharashtra</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="commercial" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Commercial</span>
+                                <span class="project-status ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 8</h3>
+                            <p>Modern office towers with sustainable design principles</p>
+                            <div class="project-meta">
+                                <span class="location">Gurgaon, Haryana</span>
+                                <span class="year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Residential Projects -->
+                    <div class="project-card" data-category="residential" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Residential</span>
+                                <span class="project-status completed">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 9</h3>
+                            <p>Luxury residential development with premium amenities</p>
+                            <div class="project-meta">
+                                <span class="location">Bangalore, Karnataka</span>
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="residential" data-aos="fade-up">
+                        <div class="project-image">
+                            <div class="project-placeholder"></div>
+                            <div class="project-overlay">
+                                <span class="project-category">Residential</span>
+                                <span class="project-status ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Project 10</h3>
+                            <p>High-end residential towers with modern living spaces</p>
+                            <div class="project-meta">
+                                <span class="location">Pune, Maharashtra</span>
+                                <span class="year">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Projects (Placeholders for 100+ projects) -->
+                    <!-- Projects 11-100 will be generated dynamically via JavaScript -->
+                </div>
+
+                <div class="load-more-container" data-aos="fade-up">
+                    <button class="btn btn-secondary" id="load-more-projects">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery Modal -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content project-modal">
+                <span class="close">&times;</span>
+                <div class="project-gallery">
+                    <div class="gallery-main">
+                        <div class="main-image">
+                            <div class="project-placeholder"></div>
+                        </div>
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <div class="thumbnail active">
+                            <div class="project-placeholder"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="project-placeholder"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="project-placeholder"></div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="project-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <h2 id="modal-project-title">Project Title</h2>
+                    <p id="modal-project-description">Project description goes here...</p>
+                    <div class="project-info">
+                        <div class="info-item">
+                            <span class="label">Category:</span>
+                            <span id="modal-project-category">Category</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location:</span>
+                            <span id="modal-project-location">Location</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Year:</span>
+                            <span id="modal-project-year">Year</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Status:</span>
+                            <span id="modal-project-status">Status</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>B.E. Billimoria & Co. Ltd.</h3>
+                    <p>Ultra Premium Construction Excellence</p>
+                    <p>Building India's most prestigious projects since 1974</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Heavy Engineering</li>
+                        <li>Special Projects</li>
+                        <li>Utility Construction</li>
+                        <li>Commercial & Residential</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 B.E. Billimoria & Co. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html> 
